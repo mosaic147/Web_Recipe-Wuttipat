@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+.grid-container {
+   display: grid;
+   grid-gap: 10px;
+}
+
+.grid-container > div{
+	border: 1px solid black;
+	text-align: center;
+}
+
+
+#header h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 48px;
+	border: 2px solid black;
+	display: inline-block;
+	padding: 20px;
+	
+	/*background: url(pic/chicken-7.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+
+#header img{
+	width: 25%;
+	border-radius: 50%;
+
+}
+
+.contain_main1{
+	
+	font-size: 22px;
+	border: 2px solid black;
+	padding: 20px;
+
+	margin: 50px 30px 0 30px;
+}
+
+#main1 img{
+	width: 100%;
+}
+
+#main1 hr{
+	margin-top: 50px;
+}
+
+#main1 li{
+	width: 100%;
+	text-align: left;
+}
+
+
+
+
+
+
+#main2 img{
+	text-align: center;
+	width: 60%;
+}
+
+#main2 ul{
+	text-align: center;
+	display: inline-block;
+}
+
+#main2 li{
+	text-align: left;
+}
+
+#main2 hr{
+	margin-top: 50px;
+}
+
+.header_table{
+	border: 2px solid black;
+	color: white;
+	background-color: black;
+	font-size: 36px;
+}
+
+
+#main2 h1{
+	border: 2px solid black;
+	display: inline-block;
+	padding: 20px;
+	border-radius: 100px;
+}
+
+.contain_main2 h1{
+	text-align: center;
+}
+
+#right img{
+	width: 80%;
+}
+
+#right h1{
+	border: 2px solid black;
+	display: inline-block;
+	padding: 20px;
+	border-radius: 100px;
+}
+
+
+#footer a{
+	text-decoration: none;
+}
+
+
+
+#header{
+	grid-column: 1 / span 3;
+}
+
+#main1{
+	grid-column: 1 / span 1;
+}
+
+#main2{
+	grid-column: 2 / span 1;
+}
+
+#right{
+	grid-column: 3 / span 1;
+}
+
+#footer{
+	grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		grid-template-columns: 50% 50%;
+		  
+	}
+
+
+	#header{
+		grid-column: 1 / span 2;
+	}
+	
+	#main1{
+		grid-column: 1 / span 2;
+	}
+	
+	#main2{
+		grid-column: 1 / span 1;
+	}
+	
+	#right{
+		grid-column: 2 / span 1;
+	}
+	
+	#footer{
+		grid-column: 1 / span 2;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		grid-template-columns: auto;
+		 
+	}
+	#header{
+		grid-column: 1 / span 1;
+	}
+	
+	#main1{
+		grid-column: 1 / span 1;
+	}
+	
+	#main2{
+		grid-column: 1 / span 1;
+	}
+	
+	#right{
+		grid-column: 1 / span 1;
+	}
+	
+	#footer{
+		grid-column: 1 / span 1;
+	}
+}
